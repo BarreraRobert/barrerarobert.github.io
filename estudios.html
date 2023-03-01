@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Curriculum Vitae - Roberto  Barrera</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/estudios.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+	<script src="https://kit.fontawesome.com/c4f686a912.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<header>
+		<h1>ROBERTO ANDRE BARRERA</h1>
+		<p>Desarrollador Web</p>
+		<nav id='menu'>
+			<input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
+			<ul>
+			  <li><a class='dropdown-arrow' href='index.html'><i class="fa-solid fa-bars"></i></a>
+				<ul class='sub-menus'>
+				  <li><a href='estudios.html'>Estudios</a></li>
+				  <li><a href='index.html'>Perfil</a></li>
+				</ul>
+			  </li>
+			</ul>
+		  </nav>
+		  <div id="theme-toggle">
+			<button id="toggle-button">Tema oscuro</button>
+		  </div>
+	</header>
+	<div class="container">
+		<section class="section">
+			<h2>Experiencia Laboral</h2>
+			<ul>
+				<li>
+					<span class="date">2015 - 2020</span>
+					<strong>Vitality</strong> - Programador
+					<p>Creacion de soluciones y mantenimiento de aplicaciones gaming.</p>
+				</li>
+			</ul>
+		</section>
+		<section class="section">
+			<h2>Educación</h2>
+			<ul>
+				<li>
+					<span class="date">2011-2014</span>
+					<strong>UTN</strong> - Diplomatura en programacion Full stack.
+					<p>Estudio en lenguajes: JavaScript - ReactJS  - MongoDB - Ruby - HTML - CSS - Boostrap</p>
+				</li>
+			</ul>
+        </section>
+    </div>
+	<footer>
+		<ul>
+			<li>
+				<i class="fa-solid fa-envelope"></i> Barrerarobert781@gmail.com
+			</li>
+			<li><i class="fa-solid fa-phone"></i> 353661353</li>
+		</ul>
+  </footer>
+  <script>
+	const button = document.getElementById('toggle-button');
+  
+	button.addEventListener('click', () => {
+	  document.body.classList.toggle('dark');
+  
+	  if (document.body.classList.contains('dark')) {
+		button.textContent = 'Tema claro';
+	  } else {
+		button.textContent = 'Tema oscuro';
+	  }
+	});
+  </script>
+</body>
